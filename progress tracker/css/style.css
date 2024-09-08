@@ -1,0 +1,187 @@
+header {
+    text-align: center;
+    padding: 50px;
+    background: linear-gradient(to right, #f5af19, #f12711);
+    color: white;
+}
+
+.animated-header {
+    animation: fadeIn 2s ease-in-out;
+}
+
+.animated-description {
+    animation: fadeIn 2s ease-in-out 1s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.challenge-goals {
+    background-color: #e0f7fa;
+    padding: 15px;
+    text-align: left;
+    font-size: 18px;
+    color: #333;
+}
+
+/* Make the navigation bar fixed at the top of the page */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Transparent background */
+    padding: 15px;
+    z-index: 1000; /* Make sure it's above other content */
+    transition: background-color 0.3s ease-in-out;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    margin: 0 20px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #f5af19;
+}
+
+/* Add padding to the body to avoid content being hidden under the fixed navbar */
+body {
+    padding-top: 70px; /* Adjust this based on the height of the navbar */
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Change background color of the navbar when the page is scrolled */
+.scrolled {
+    background-color: rgba(0, 0, 0, 1); /* Solid background on scroll */
+}
+
+
+#daily-progress {
+    background-color: #ffffff;
+    padding: 40px;
+    
+}
+.for-bg{
+    background-color: #f5af19;
+    display: flex;
+}
+
+.day-entry {
+    width: 20%;
+    border: 3px solid #ffffff;
+    background-color: aqua;
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.day-entry:hover {
+    transform: translateY(-10px);
+    background-color: #f5af19;
+    border-color: #f5af19;
+}
+
+.progress-img {
+    width: 100%;
+    height: auto;
+}
+
+button {
+    background-color: #f12711;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #f5af19;
+}
+#achievements {
+    background-color: #f0f4c3;
+    padding: 40px;
+    text-align: center;
+}
+
+.achievement-list {
+    list-style-type: none;
+    padding: 0;
+    font-size: 18px;
+}
+
+#weekly-progress {
+    background-color: #ffffff;
+    padding: 40px;
+    
+}
+.week-entry {
+    width: 77%;
+    border: 3px solid #ffffff;
+    background-color: #c1ee1e;
+    padding: 20px;
+
+    transition: transform 0.3s ease;
+}
+.week-entry-mt {
+    border: 3px solid #ffffff;
+    
+    background-color: aqua;
+
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+.week-entry-mtm {
+    width: 3%;
+    border: 3px solid #6ce24b;
+    background-color: rgb(255, 255, 255);
+    padding: 5px;
+
+    transition: transform 0.3s ease;
+}
+.week-entry:hover {
+    transform: translateY(20px);
+    background-color: #f5af19;
+}
+
+.week-entry-mt:hover {
+    transform: translateY(-20px);
+    background-color: #c1ee1e;
+}
+.for-bg2{
+    background-color: #6ce24b;
+    display: flex;
+
+}
+.for-bg3{
+
+    background-color: #6ce24b;
+    display: flex;
+}
+
+button{
+    bottom: 10%;
+}
